@@ -55,7 +55,7 @@ module GDocs4Ruby
   <atom:title></atom:title>
 </atom:entry>'
     DOWNLOAD_TYPES = ['xls', 'csv', 'pdf', 'ods', 'tsv', 'html']
-    EXPORT_URI = 'http://spreadsheets.google.com/feeds/download/spreadsheets/Export'
+    EXPORT_URI = 'https://docs.google.com/feeds/download/spreadsheets/Export'
     
     #Helper function limit queries to Spreadsheets.  See BaseObject::find for syntax.  Type is not required and assumed to be 'spreadsheet'.
     def self.find(service, query, args = {})
